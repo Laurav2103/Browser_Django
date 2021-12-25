@@ -30,5 +30,8 @@ class article(models.Model):
     accionesLogros = models.CharField(max_length=80)
     valorUnitario = models.CharField(max_length=80)
     valorTotal = models.CharField(max_length=80)
+    
+    def __str__(self) :
+        return self.nombreArticulo
 
     
