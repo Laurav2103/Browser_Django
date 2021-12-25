@@ -20,3 +20,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('',include('core.urls')),
 ]
+
+admin.site.site_header = "administracion de articulos de Tigo SA"
+admin.site.index_title = "Modulos"
+admin.site.site_title = "Tigo"
