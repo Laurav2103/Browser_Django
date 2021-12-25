@@ -22,7 +22,6 @@ class article(models.Model):
     objetivoEspecifico = models.CharField(max_length=80)
     tipoEstudio = models.CharField(max_length=80)
     metodologia = models.CharField(max_length=80)
-    duracion = models.CharField(max_length=80)
     tamañoMuestra = models.CharField(max_length=80)
     ciudades = models.CharField(max_length=80)
     fechaCampo = models.CharField(max_length=80)
