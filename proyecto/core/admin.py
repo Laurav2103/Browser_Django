@@ -14,7 +14,7 @@ class articleResourse(resources.ModelResource):
 
 class articleAdmin(ImportExportModelAdmin, admin.ModelAdmin):
     search_fields = ['nombreArticulo', 'producto']
-    # list_display = ['categoria', 'segmento', 'producto', 'nombreArticulo', 'descripcion', 'descripcionAll', 'fechaRecibido', 'NombreArchivoPDF', 'fotoNombreImagen', 'fechaPublicacion', 'estado', 'autor', 'enlace',
+    # list_display = ['categoria', 'segmento', 'producto' , 'nombreArticulo', 'descripcion', 'descripcionAll', 'fechaRecibido', 'NombreArchivoPDF', 'fotoNombreImagen', 'fechaPublicacion', 'estado', 'autor', 'enlace',
     #  'sabiasQue', 'objetivoGeneral', 'objetivoEspecifico', 'tipoEstudio', 'metodologia', 'tamañoMuestra', 'ciudades', 'fechaCampo', 'conclusiones', 'agencia', 'accionesLogros', 'valorUnitario', 'valorTotal']
     list_display = ['categoria', 'segmento', 'producto',
                     'nombreArticulo', 'descripcion', 'descripcionAll']

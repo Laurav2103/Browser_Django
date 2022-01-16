@@ -1,15 +1,17 @@
 from django.db import models
 from django.http import HttpResponse
 from import_export import resources
+from sqlalchemy import true
 # Create your models here.
 
 
 class article(models.Model):
     # id--> numero autoincrementable
-    id=models.AutoField(primary_key=True)
+    id = models.AutoField(primary_key=True)
     categoria = models.CharField(max_length=350)
     segmento = models.CharField(max_length=350)
     producto = models.CharField(max_length=350)
+    # unique=True para validar que el campo sea unico
     nombreArticulo = models.CharField(max_length=350)
     descripcion = models.CharField(max_length=350)
     descripcionAll = models.CharField(max_length=550)
@@ -36,6 +38,7 @@ class article(models.Model):
 
     def __str__(self):
         return self.nombreArticulo
+
 
 """    def import_xlsx(request):
         with open("archivo.xlsx", "r") as xlsx_file:
